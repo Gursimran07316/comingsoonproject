@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+:root{
+    --Blue: hsl(223, 87%, 63%);
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --Dark-Blue:hsl(209, 33%, 12%);
+}
+body{
+    font-size: 20px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+.container{
+    width:75%;
+    overflow: hidden;
+    margin:0 auto;
+} 
+/*------- headings section ----*/
+/* heading -1 */
+.heading{
+    text-align: center;
+    margin-top:2.5rem;
+}
+.heading h3{
+    text-transform: uppercase;
+    font-size:2rem;
+}
+/* heading -2 */
+.heading-2{
+    text-align:center;
+    margin-top:2.5rem;
+}
+.heading-2 h2{
+    font-weight:700;
+    margin-bottom: 1rem;
+    font-size:2.5rem;
+}
+.heading-2 p{
+    font-size:1.2rem;
+}
+#blue{
+    color:var(--Blue);
+}
+#grey{
+    color:var(--Gray);
+    font-weight:300;
+}
+#red{
+    color:var(--Light-Red);
+}
+/* Form */
+.form{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.8rem;
+}
+::-webkit-input-placeholder{
+    color:var(--Pale-Blue);
+    padding-left:1rem;
+    font-size: 1rem;
+}
+.form input.txt{
+    height:50px;
+    width:400px;
+    border-radius:40px;
+    border:var(--Pale-Blue) 1px solid;
+    outline:none;
+    padding:0rem 1rem;
+}
+.form button{
+    height: 50px;
+    width:200px;
+    background: var(--Blue);
+    border:none;
+    color:white;
+    border-radius:40px;
+    font-weight: 300;
+    outline: none;
+    font-size: 1rem;
+}
+.form button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+} 
+.form div.form-1{
+    margin-right:1rem;
+}
+.form div p{
+    padding-top: 0.5em;
+    padding-left:1rem;
+    font-size:0.9rem;
+}
+
+/* Image */
+.img{
+    width:100%;
+    margin:0 auto;
+    margin-top: 4rem;
+    margin-bottom:3rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.img img{
+    width:100%;
+    max-width: 800px;
+    height: auto;
+    max-height: 400px;
+}
+/* footer */
+footer{
+    text-align: center;
+    margin-top:2rem;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    margin-bottom:2.5rem;
+
+}
+footer ul li{
+    text-decoration: none;
+    list-style: none;
+    margin-left:2rem;
+}
+footer ul li a{
+    color:var(--Blue);
+    border: 1px solid var(--Pale-Blue);
+    padding: 1rem 1.2rem;
+    border-radius:50%;
+    transition: all ease-in 0.5s;
+}
+footer ul li a:hover {
+    color:white;
+    background:var(--Blue);
+}
+footer p{
+    font-size:0.9rem;
+    color:var(--Gray);
+}
+
+@media(max-width:650px){
+    html{
+        font-size:12px;
+    }
+    .form{
+        flex-direction:column;
+    }
+    .form div{
+        margin-bottom:1rem;
+    }
+    .form input.txt,.form button{
+     width:100%;
+    }
+    .heading-2 h2{
+        font-size: 2rem;
+    }
+    .heading,.heading-2{
+     margin-top:1rem;
+    }
+    .img{
+        margin-bottom:1rem;
+        margin-top:1rem;
+        width:100%;
+    }
+    footer ul{
+        margin-bottom:3rem;
+    }
+}
